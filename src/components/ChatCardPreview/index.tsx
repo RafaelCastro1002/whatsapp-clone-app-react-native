@@ -30,7 +30,7 @@ const ChatCardPreview = ({
         />
         <ContentSection style={{ flex: 1 }}>
           <LineSection>
-            <NameContact>{nameContact}</NameContact>
+            <NameContact numberOfLines={1}>{nameContact}</NameContact>
             <TimeLastMessage
               style={
                 unviewedMessages && {
@@ -42,7 +42,9 @@ const ChatCardPreview = ({
             </TimeLastMessage>
           </LineSection>
           <LineSection>
-            <MessagePreview>{lastMessage.message}</MessagePreview>
+            <MessagePreview numberOfLines={1}>
+              {lastMessage.message}
+            </MessagePreview>
             {unviewedMessages && (
               <Badge
                 label={unviewedMessagesAmount?.toString()}

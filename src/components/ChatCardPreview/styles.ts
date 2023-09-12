@@ -19,12 +19,15 @@ export const LineSection = styled(View)`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  overflow: "hidden";
 `;
 
 export const NameContact = styled(Text)`
   color: black;
   font-size: 18px;
   font-weight: 500;
+  width: 65%;
 `;
 
 export const TimeLastMessage = styled(Text)`
@@ -37,4 +40,5 @@ export const MessagePreview = styled(Text)`
   color: #a4aaac;
   font-size: 14px;
   font-weight: 400;
+  width: 86%;
 `;

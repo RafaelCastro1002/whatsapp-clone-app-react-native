@@ -39,7 +39,5 @@ export const generateChats = (): ChatCard[] => {
 const getMessage = () => {
   const message = faker.lorem.paragraph();
 
-  return message.length > MAX_SIZE_MESSAGE
-    ? `${message.substring(0, MAX_SIZE_MESSAGE)}...`
-    : message;
+  return message;
 };
